@@ -52,6 +52,31 @@ print(mat[y].sum(axis =0 ))
 
 
 
+def learn(x,y):
+    z = [y[value] for value in range(0,len(x)) if x[value] =='m']
+    return z
+
+print(learn(['m','f','m','f','m'],[1,2,3,4,5]))
+
+
+def rake_garden(a):
+    z = a.split()
+    b = ' '
+    y = ['gravel' if x != 'rock' else x for x in z]
+    return b.join(y)
+
+
+things = [['a','b'],['c','d'],['e','f']]
+trees = [1,2,3]
+
+for index,item in enumerate(things):
+    item.append(trees[index])
+    print(things)
+
+
+
+
+
 
 
 
